@@ -1,0 +1,184 @@
+    header {
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    
+    ul.SerchSection {
+        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        padding: 12px;
+        position: absolute;
+        bottom: 100px;
+        width: 97.33%;
+        box-sizing: border-box;
+    }
+    
+    .headerConten {
+        position: relative;
+        padding-top: 150px;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+    
+    .headerConten h1 {
+        font-size: 85px;
+        font-weight: 700;
+        line-height: 80px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        color: #fff;
+    }
+    
+    .headerConten p {
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    ul.SerchSection>li {
+        margin-right: 10px;
+        background-color: #fff;
+        padding: 3px 16px;
+        border-radius: 12px;
+        width: 25%;
+        box-sizing: border-box;
+    }
+    
+    ul.SerchSection>li>span {
+        width: 100%;
+        display: block;
+        color: #787575;
+        text-align: left;
+        padding-bottom: 2px;
+        box-sizing: border-box;
+        padding-top: 5px;
+    }
+    
+    ul.SerchSection>li input {
+        padding: 0px;
+        border: 0;
+        height: 30px;
+        color: #000;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    
+     ::-webkit-input-placeholder {
+        color: #000;
+        font-weight: 600;
+    }
+    
+     ::-moz-placeholder {
+        color: #000;
+        font-weight: 600;
+    }
+    
+     :-ms-input-placeholder {
+        color: #000;
+        font-weight: 600;
+    }
+    
+     :-moz-placeholder {
+        color: #000;
+        font-weight: 600;
+    }
+    
+    ul.SerchSection>li input:focus,
+    input:focus-visible {
+        border: 0;
+        box-shadow: 0;
+        outline: none;
+    }
+    
+    ul.SerchSection>li:last-child {
+        background: rgb(255, 89, 76);
+        background: linear-gradient(90deg, rgba(255, 89, 76, 1) 0%, rgba(250, 197, 39, 1) 100%);
+    }
+    
+    ul.SerchSection>li:last-child>button {
+        margin-right: 0;
+        background: rgb(255, 89, 76);
+        background: linear-gradient(90deg, rgba(255, 89, 76, 1) 0%, rgba(250, 197, 39, 1) 100%);
+        font-size: 16px;
+        color: #fff;
+    }
+    
+    ul.SerchSection>li:last-child button {
+        cursor: pointer;
+        display: flex;
+        width: 100%;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul.SerchSection>li:last-child button>img {
+        padding-right: 5px;
+    }
+    
+    .contentHeader {
+        position: relative;
+        height: 100%;
+    }
+    
+    button {
+        background-color: transparent;
+        border: 0;
+        font-size: 16px;
+        color: #fff;
+        padding: 16px 20px;
+        cursor: pointer;
+    }
+    
+    nav a {
+        position: relative;
+        text-align: left;
+        display: flex;
+        width: 300px;
+    }
+    
+    .buttomArrow {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    @media(max-width:991px) {
+        ul.SerchSection {
+            width: 97.33%;
+        }
+    }
+    
+    @media(max-width:576px) {
+        ul.SerchSection {
+            width: 100%;
+            flex-direction: column;
+            position: relative;
+            bottom: auto;
+        }
+        ul.SerchSection>li {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .headerConten h1 {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        .headerConten {
+            padding-top: 90px;
+            padding-bottom: 15px;
+        }
+    }
+    
+    header {
+        position: relative;
+        overflow: hidden;
+    }

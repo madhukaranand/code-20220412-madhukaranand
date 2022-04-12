@@ -1,0 +1,162 @@
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.col-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.contentHeader {
+    position: relative;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+.headingBlock h2 {
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.headingBlock p {
+    font-size: 20px;
+}
+
+.col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row>[class^="col-"] {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.titalRoom {
+    border: 1px solid #f1f1f1;
+    width: 70%;
+    margin: -50px auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.titalRoom p {
+    margin-top: 0px;
+}
+
+.listofButton {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.roomBlock {
+    position: relative;
+    overflow: hidden;
+}
+
+.roomBlock img {
+    width: 100%;
+    border-radius: 10px;
+    height: 333px;
+    object-fit: cover;
+}
+
+.listofButton {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+
+.listofButton>li:last-child {
+    justify-content: flex-end;
+    display: flex;
+    margin-left: auto;
+    margin-top: -10px;
+}
+
+.listofButton>li:last-child>button {
+    padding: 12px 30px;
+}
+
+.listofButton>li>button {
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 6px 22px;
+    color: #000;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(255, 89, 76, 1) 0%, rgba(250, 197, 39, 1) 100%);
+}
+
+@media (max-width: 576px) {
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.exploreSection {
+    position: relative;
+    overflow: hidden;
+}

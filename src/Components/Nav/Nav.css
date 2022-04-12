@@ -1,0 +1,247 @@
+nav {
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*navbar*/
+
+nav ul {}
+
+nav ul>li {
+    padding: 15px;
+    display: inline-block;
+    transition: all .3s ease;
+    margin-left: -5px
+}
+
+.navBarBlock {
+    display: flex;
+}
+
+nav ul>li:not(:last-of-type):hover {}
+
+nav ul>li:first-of-type {}
+
+nav ul>li:last-of-type {
+    float: right;
+}
+
+nav ul>li:last-of-type a .fa {
+    font-size: 21px
+}
+
+
+/* End Navbar */
+
+
+/* Start Menue Right */
+
+
+/*Desktop View*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 0px 0px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.nav-options>li {
+    text-align: center;
+    gap: 25px;
+}
+
+ul.nav-options>li:last-child>a {
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+.logo {
+    width: 175px;
+    height: auto;
+}
+
+.nav-options {
+    list-style-type: none;
+    justify-content: flex-end;
+    width: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: center
+}
+
+.mobile-option {
+    display: none;
+}
+
+.option :hover {
+    color: #000;
+}
+
+.signin-up {
+    display: flex;
+    padding: 0px 5px;
+    list-style-type: none;
+}
+
+.sign-in {
+    padding-right: 50px;
+    align-self: center;
+}
+
+.sign-in :hover {
+    color: #000;
+}
+
+.signup-btn {
+    padding: 10px 10px;
+    height: 2.4rem;
+    border-radius: 3px;
+    color: #000;
+    cursor: pointer;
+    align-items: center;
+}
+
+ul.nav-options>li {
+    flex: 1;
+}
+
+ul.nav-options>li>a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-dropdown {
+    position: absolute;
+    visibility: hidden;
+    background: linear-gradient(90deg, rgba(255, 89, 76, 1) 0%, rgba(250, 197, 39, 1) 100%);
+    color: #fff;
+    opacity: 0;
+    text-align: left;
+    border-radius: 4px;
+    top: 35px;
+    width: 210px;
+}
+
+.nav-dropdown>li {
+    border-bottom: 1px solid #edbb59;
+    padding: 15px 20px;
+}
+
+ul.nav-options>li>a:hover {
+    color: rgba(255, 89, 76, 1);
+}
+
+.nav-dropdown>li>a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    transition: all ease-in 0.2s;
+}
+
+ul.nav-options>li {
+    position: relative;
+}
+
+ul.nav-options>li:hover ul.nav-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    /*Mobile View */
+    .header {
+        padding: 0px;
+    }
+    .nav-options {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        flex-direction: column;
+        list-style-type: none;
+        grid-gap: 0px;
+        height: 100vh;
+    }
+    .nav-options.active {
+        background: #000;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 2;
+        align-content: center;
+        padding-left: 0px;
+    }
+    .menu-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .option>a {
+        padding: 10px 25px;
+        display: block
+    }
+}
+
+@media(max-width:767px) {
+    .nav-options {
+        justify-content: flex-start;
+    }
+    ul.nav-options>li {
+        flex: 0;
+    }
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+        width: 50px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+}
